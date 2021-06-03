@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_feed">
+
+    <fragment
+        android:id="@+id/navigation_feed"
+        android:name="br.com.rubiotechnews.ui.feed.FeedFragment"
+        android:label="@string/title_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_navigation_feed_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
+        <action
+            android:id="@+id/action_navigation_feed_to_detailFeedFragment"
+            app:destination="@id/detailFeedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_category"
+        android:name="br.com.rubiotechnews.ui.categoria.CategoriaFragment"
+        android:label="@string/title_category"
+        tools:layout="@layout/fragment_categoria" >
+        <action
+            android:id="@+id/action_navigation_category_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
+        <action
+            android:id="@+id/action_navigation_category_to_detailCategoriaFragment"
+            app:destination="@id/detailCategoriaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="br.com.rubiotechnews.ui.favorito.FavoritosFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favoritos" >
+        <action
+            android:id="@+id/action_navigation_favorite_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
+        <action
+            android:id="@+id/action_navigation_favorite_to_detailFavoritosFragment"
+            app:destination="@id/detailFavoritosFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheetFragment"
+        android:name="br.com.rubiotechnews.ui.bottomsheet.BottomSheetFragment"
+        android:label="BottomSheetFragment"
+        tools:layout="@layout/fragment_bottom_sheet"
+        />
+    <fragment
+        android:id="@+id/detailFeedFragment"
+        android:name="br.com.rubiotechnews.ui.feed.DetailFeedFragment"
+        android:label="detail_feed_fragment"
+        tools:layout="@layout/detail_feed_fragment" />
+    <fragment
+        android:id="@+id/detailCategoriaFragment"
+        android:name="br.com.rubiotechnews.ui.categoria.DetailCategoriaFragment"
+        android:label="detail_categoria_fragment"
+        tools:layout="@layout/detail_categoria_fragment" />
+    <fragment
+        android:id="@+id/detailFavoritosFragment"
+        android:name="br.com.rubiotechnews.ui.favorito.DetailFavoritosFragment"
+        android:label="detail_favoritos_fragment"
+        tools:layout="@layout/detail_favoritos_fragment" />
+</navigation>

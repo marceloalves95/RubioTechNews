@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">RubioTechNews</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_category">Categoria</string>
+    <string name="title_favorites">Favoritos</string>
+
+    <string name="bem_vindo">Bem Vindo!!!</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="settings">Configurações</string>
+    <string name="tema_claro">Tema Claro</string>
+    <string name="tema_escuro">Tema Escuro</string>
+    <string name="fonte">Fonte:</string>
+
+    <string-array name="list_servicos">
+        <item>Fogão</item>
+        <item>Geladeira</item>
+        <item>Lava-Louça</item>
+        <item>Lava-Roupa</item>
+        <item>Micro-ondas</item>
+        <item>Secadora</item>
+    </string-array>
+</resources>
